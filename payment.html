@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Fee: $55</h2>
+    <p>Click below to pay with PayPal</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="business" value="mrbeastthechallanger@gmail.com">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="item_name" value="MrBeast Challenge Registration">
+      <input type="hidden" name="amount" value="55.00">
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="hidden" name="return" value="https://example.com/thankyou.html">
+      <button type="submit" class="btn">Pay with PayPal</button>
+    </form>
+  </div>
+</body>
+</html>
